@@ -1,0 +1,34 @@
+{
+  "name": "crosspost-backend",
+  "version": "1.0.0",
+  "description": "Standards-based cross-posting API gateway for X, Bluesky, and Mastodon",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@atproto/api": "^0.18.21",
+    "@fastify/helmet": "^13.0.2",
+    "@fastify/multipart": "^9.4.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/swagger": "^9.7.0",
+    "@fastify/swagger-ui": "^5.2.5",
+    "emusks": "^2.0.9",
+    "fastify": "^5.7.4",
+    "masto": "^7.10.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
